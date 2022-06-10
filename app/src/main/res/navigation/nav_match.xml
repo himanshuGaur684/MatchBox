@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_match"
+    app:startDestination="@id/allMatchesFragment">
+
+    <fragment
+        android:id="@+id/allMatchesFragment"
+        android:name="com.gaur.matchbox.all_matches.AllMatchesFragment"
+        android:label="fragment_all_matches"
+        tools:layout="@layout/fragment_all_matches" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.gaur.matchbox.saved_matches.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
+</navigation>

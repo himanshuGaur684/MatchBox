@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".all_matches.AllMatchesFragment"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:id="@+id/appbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:contentInsetLeft="0dp"-->
+<!--                app:contentInsetStart="0dp"-->
+
+<!--                app:contentInsetStartWithNavigation="0dp"-->
+<!--                app:titleTextColor="@color/white">-->
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvHeading"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text=" All Matches"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_16sdp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAllMatches"
+            android:layout_width="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+             tools:listitem="@layout/view_holder_match" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
